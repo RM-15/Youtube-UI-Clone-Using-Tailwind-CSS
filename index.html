@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,40 +14,41 @@
 
 <body>
     <header>
-        <nav class="w-full">
-            <div class="h-14 p-6 flex items-center justify-between">
-                <div class="flex items-center justify-between gap-5">
+        <nav class="w-full max-w-screen-2xl mx-auto max-sm:mx-0">
+            <div class="h-14 p-3 flex items-center justify-between">
+                <div class="flex items-center gap-5">
                     <i class="fa-solid fa-bars text-xl"></i>
                     <div class="flex items-center justify-between gap-0">
                         <i class="fa-brands fa-youtube text-2xl size-6" style="color: rgb(227, 16, 16);"></i>
                         <h1 class="font-bold text-black text-xl size-8 tracking-tighter">YouTube</h1>
                     </div>
                 </div>
-                <div class=" flex flex-1 justify-center items-center gap-4">
-                    <div
-                        class="w-150 h-10 border border-solid border-zinc-500 px-5 rounded-4xl flex items-center justify-between">
-                        <input type="text" placeholder="Search" class="text-base">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="flex items-center justify-end gap-48 max-sm:gap-2 max-lg:gap-4">
+                    <div class=" flex items-center gap-4">
+                        <div
+                            class="max-sm:border-none max-sm:w-0 max-sm:text-xl max-lg:w-59 max-lg:text-xl w-150 h-10 border border-solid border-zinc-500 px-5 rounded-4xl flex items-center justify-between">
+                            <input type="text" placeholder="Search" class="text-base flex items-center max-sm:hidden">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class=" flex items-center justify-center text-xl rounded-3xl w-10 h-10 bg-[#ededebf9] max-sm:hidden">
+                            <span class="material-symbols-outlined">
+                                mic
+                            </span></div>
                     </div>
-                    <div class=" flex items-center justify-center text-xl rounded-3xl w-10 h-10 bg-[#ededebf9]"><svg
-                            xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
-                            <path
-                                d="M395-435q-35-35-35-85v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q0 50-35 85t-85 35q-50 0-85-35Zm85-205Zm-40 520v-123q-104-14-172-93t-68-184h80q0 83 58.5 141.5T480-320q83 0 141.5-58.5T680-520h80q0 105-68 184t-172 93v123h-80Zm68.5-371.5Q520-503 520-520v-240q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760v240q0 17 11.5 28.5T480-480q17 0 28.5-11.5Z" />
-                        </svg></div>
-                </div>
-                <div class="flex justify-center items-center gap-4">
-                    <div class="bg-[#ededebf9] flex items-center justify-center gap-2 font-semibold rounded-3xl h-9 w-25">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
-                            <path d="M440-120v-320H120v-80h320v-320h80v320h320v80H520v320h-80Z" />
-                        </svg>
-                        <h1>Create</h1>
-                    </div>
-                    <div><svg xmlns="http://www.w3.org/2000/svg" height="27px" viewBox="0 -960 960 960" width="27px">
-                            <path
-                                d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z" />
-                        </svg></div>
-                    <div class="rounded-3xl h-9 w-9 bg-orange-200 mx-2">
-                        <img src="rehanimg.jpg" alt="" class="object-cover rounded-3xl bg-white">
+                    <div class="flex justify-center items-center gap-4">
+                        <div
+                            class="bg-[#ededebf9] flex items-center justify-center gap-2 font-semibold rounded-3xl h-9 w-25">
+                            <span class="material-symbols-outlined">
+                                add_2
+                            </span>
+                            <h1>Create</h1>
+                        </div>
+                        <div class="flex items-center justify-center max-sm:hidden"><span class="material-symbols-outlined">
+                                notifications
+                            </span></div>
+                        <div class="rounded-3xl h-9 w-9 bg-orange-200 mx-2 max-sm:mx-0">
+                            <img src="rehanimg.jpg" alt="" class="object-cover rounded-3xl bg-white">
+                        </div>
                     </div>
                 </div>
             </div>
