@@ -16,7 +16,7 @@
 
 <body class="box-border font-['Roboto','Arial','sans-serif']">
     <header>
-        <nav class=" fixed w-full max-w-screen-2xl mx-auto  backdrop-blur-md bg-white/90 dark:bg-[#0f0f0f]/90 z-10">
+        <nav class="fixed w-full max-w-[2560px] mx-auto backdrop-blur-md bg-white/90 dark:bg-[#0f0f0f]/90 z-10">
             <div class="h-14 p-3 flex items-center justify-between max-sm:mx-1 mx-3 ">
                 <div class="flex items-center gap-6 max-sm:gap-7 flex-shrink-0 ">
                     <svg class="dark:text-white fill-current" xmlns="http://www.w3.org/2000/svg" height="24"
@@ -62,20 +62,31 @@
                         </svg>
                     </div>
                 </div>
-                <div class="flex items-center max-sm:justify-end gap-20 max-lg:gap-6 max-sm:gap-3">
+                <div
+                    class="flex items-center 2xl:gap-130 max-lg:gap-3 gap-48 [@media(width:1024px)]:gap-10 max-sm:justify-end max-sm:gap-3">
                     <div class="flex items-center gap-2 max-sm:gap-1">
-                        <div class="max-sm:border-none
-                            lg:w-[620px] md:w-[320px] sm:w-[220px] 
+                        <div class="
+                            2xl:w-[800px] lg:w-[500px] md:w-[300px] sm:w-[220px] max-lg:w-[250px] max-sm:w-5 
                             w-auto shrink-0 h-10 border border-solid border-zinc-300
                             dark:border-zinc-700 dark:border-thin rounded-4xl
-                            flex items-center justify-between">
-                            <div class="w-full px-5 border-zinc-200 h-full rounded-l-4xl flex items-center border-e-1
-                                dark:border-zinc-800 dark:bg-zinc-900 max-sm:dark:bg-none bg-white max-sm:border-none ">
+                            flex items-center justify-between max-sm:border-none">
+                            <div class=" max-sm:hidden w-full px-5 border-zinc-200 h-full rounded-l-4xl flex items-center border-e-1
+                                dark:border-zinc-800 dark:bg-zinc-900 bg-white max-sm:border-none ">
                                 <input type="text" placeholder="Search"
                                     class="text-base flex items-center max-sm:hidden w-full focus:outline-none">
                             </div>
                             <div
-                                class="dark:bg-zinc-800 bg-zinc-100 h-full w-18 flex items-center justify-center rounded-r-4xl max-sm:bg-white max-sm:w-9 ">
+                                class="max-sm:hidden dark:bg-zinc-800 bg-zinc-100 h-full w-18 flex items-center justify-center rounded-r-4xl max-sm:bg-white max-sm:w-9 ">
+                                <svg class="dark:text-white fill-current" xmlns="http://www.w3.org/2000/svg" height="24"
+                                    viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
+                                    style="pointer-events: none; display: inherit;">
+                                    <path
+                                        d="M11 2a9 9 0 105.641 16.01.966.966 0 00.152.197l3.5 3.5a1 1 0 101.414-1.414l-3.5-3.5a1 1 0 00-.197-.153A8.96 8.96 0 0020 11a9 9 0 00-9-9Zm0 2a7 7 0 110 14 7 7 0 010-14Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div
+                                class=" border-none max-sm:flex hidden dark:bg-zinc-800 max-sm:dark:bg-inherit h-full w-18 items-center justify-center  max-sm:w-9 ">
                                 <svg class="dark:text-white fill-current" xmlns="http://www.w3.org/2000/svg" height="24"
                                     viewBox="0 0 24 24" width="24" focusable="false" aria-hidden="true"
                                     style="pointer-events: none; display: inherit;">
@@ -96,7 +107,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center gap-4">
+                    <div class="flex justify-center items-center gap-2 max-lg:gap-1 max-sm:gap-2">
                         <div
                             class="bg-[#ededebf9] flex items-center justify-center gap-1 px-3 font-medium text-sm rounded-3xl h-9 dark:bg-zinc-800 max-sm:px-2">
                             <span class="material-symbols-outlined">
@@ -113,7 +124,7 @@
                                 </path>
                             </svg>
                         </div>
-                        <div class="rounded-3xl h-8 w-8 mx-2 max-sm:mr-2 max-sm:mx-0">
+                        <div class="rounded-3xl h-8 w-8 ml-2 max-sm:mr-2 max-sm:ml-0">
                             <img src="assets/rehanimg.jpg" alt="" class="object-cover rounded-3xl bg-white">
                         </div>
                     </div>
@@ -122,7 +133,7 @@
         </nav>
     </header>
     <section
-        class=" max-lg:hidden fixed overflow-y-hidden hover:overflow-y-auto scrollbar-thin dark:scrollbar-thumb-zinc-800 dark:scrollbar-track-black-900 top-14 mt-3 mb-3 h-[calc(100vh_-_4.5rem)] dark:text-white fill-current bg-white dark:bg-[#0f0f0f]">
+        class="hidden [@media(min-width:1025px)]:block fixed overflow-y-hidden hover:overflow-y-auto scrollbar-thin dark:scrollbar-thumb-zinc-800 dark:scrollbar-track-black-900 top-14 mt-3 mb-3 h-[calc(100vh_-_4.5rem)] dark:text-white fill-current bg-white dark:bg-[#0f0f0f]">
         <div class="flex flex-col">
             <div class="flex items-center justify-start h-10 w-50 rounded-lg gap-6 mx-3 bg-zinc-100 dark:bg-zinc-800">
                 <div class="flex items-center justify-center pl-3 ">
@@ -483,7 +494,7 @@
         </div>
     </section>
     <section
-        class=" max-sm:hidden lg:hidden fixed overflow-y-hidden hover:overflow-y-auto scrollbar-thin dark:scrollbar-thumb-zinc-800 dark:scrollbar-track-black-900 top-14 mt-[6px] mx-1 h-[calc(100vh - 4.5rem)] dark:text-white fill-current bg-white dark:bg-[#0f0f0f]">
+        class="hidden [@media(width:1024px)]:block fixed overflow-y-hidden hover:overflow-y-auto scrollbar-thin dark:scrollbar-thumb-zinc-800 dark:scrollbar-track-black-900 top-14 mt-[6px] mx-1 h-[calc(100vh - 4.5rem)] dark:text-white fill-current bg-white dark:bg-[#0f0f0f]">
         <div
             class="flex flex-col items-center justify-center h-[74px] w-16 rounded-lg gap-[6.5px] hover:bg-zinc-100 dark:hover:bg-zinc-800">
             <div class="flex items-center justify-center">
@@ -535,15 +546,18 @@
             <div class="text-[10px]">You</div>
         </div>
     </section>
-    <main
-        class="sm:ml-24 max-lg:w-[calc(100%_-_64px)] lg:ml-[248px] w-[calc(100%_-_248px)] max-sm:w-full px-2 transition-all duration-300">
-        <div class="fixed top-14 z-40 py-3 
-    max-lg:w-[calc(100%_-_64px)] w-[calc(100%_-_240px)] max-sm:w-full transition-all duration-300
-    backdrop-blur-md bg-white/90 dark:bg-[#0f0f0f]/90 max-w-screen-2xl mx-[-12px]">
-            <div class=" max-lg:mx-2 max-sm:w-[calc(100%-11%)] max-sm:mx-auto mx-7 flex items-center ">
-                <div class="absolute left-0 top-0 bottom-0 w-8 from-white dark:from-zinc-900 pointer-events-none z-10">
+    <section
+        class="max-w-[2560px] max-sm:mx-0 max-sm:my-0 ml-0 [@media(width:1024px)]:ml-[72px] [@media(min-width:1025px)]:ml-60 w-full [@media(width:1024px)]:w-[calc(100%_-_65px)] [@media(min-width:1025px)]:w-[calc(100%_-_240px)] max-sm:w-full">
+        <div class="fixed top-14 z-40 py-3 transform-gpu border-none shadow-none
+    [@media(width:1024px)]:w-[calc(100%_-_65px)] [@media(min-width:1025px)]:w-[calc(100%_-_240px)] w-full max-sm:w-full transition-all duration-300
+    backdrop-blur-md bg-white/90 dark:bg-[#0f0f0f]/90 max-w-[2560px] max-lg:mx-0 mx-[-12px]">
+            <div
+                class="max-sm:w-[calc(100%-11%)] max-lg:w-[calc(100%_-_40px)] max-sm:mx-auto  max-lg:mx-auto mx-7 flex items-center ">
+                <div
+                    class="absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-white to-transparent dark:from-zinc-900 pointer-events-none z-10">
                 </div>
-                <div class="flex gap-3 overflow-x-auto scroll-smooth whitespace-nowrap select-none snap-x snap-mandatory w-full items-center
+                <div
+                    class="flex gap-3 2xl:gap-5 overflow-x-auto overflow-y-hidden scroll-smooth whitespace-nowrap select-none snap-x snap-mandatory w-full items-center
                 [-ms-overflow-style:none]
                 [scrollbar-width:none]
                 [&::-webkit-scrollbar]:w-0
@@ -589,6 +603,9 @@
                         TailwindCSS</div>
                     <div
                         class="snap-start shrink-0 w-auto px-3 py-1.5 text-sm font-medium h-8 w-19 rounded-lg cursor-pointer transition bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white">
+                        UI/UX Basics</div>
+                    <div
+                        class="snap-start shrink-0 w-auto px-3 py-1.5 text-sm font-medium h-8 w-19 rounded-lg cursor-pointer transition bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white">
                         Git & GitHub</div>
                     <div
                         class="snap-start shrink-0 w-auto px-3 py-1.5 text-sm font-medium h-8 w-19 rounded-lg cursor-pointer transition bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white">
@@ -620,95 +637,684 @@
                     <div
                         class="snap-start shrink-0 w-auto px-3 py-1.5 text-sm font-medium h-8 w-19 rounded-lg cursor-pointer transition bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white">
                         SQL</div>
+                    <div
+                        class="snap-start shrink-0 w-auto px-3 py-1.5 text-sm font-medium h-8 w-19 rounded-lg cursor-pointer transition bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white">
+                        Freelancing</div>
+                    <div
+                        class="snap-start shrink-0 w-auto px-3 py-1.5 text-sm font-medium h-8 w-19 rounded-lg cursor-pointer transition bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white">
+                        Docker</div>
+                    <div
+                        class="snap-start shrink-0 w-auto px-3 py-1.5 text-sm font-medium h-8 w-19 rounded-lg cursor-pointer transition bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white">
+                        AWS/Azure</div>
+                    <div
+                        class="snap-start shrink-0 w-auto px-3 py-1.5 text-sm font-medium h-8 w-19 rounded-lg cursor-pointer transition bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white">
+                        Database Management System</div>
+                    <div
+                        class="snap-start shrink-0 w-auto px-3 py-1.5 text-sm font-medium h-8 w-19 rounded-lg cursor-pointer transition bg-zinc-100 dark:bg-zinc-800 dark:hover:bg-zinc-700 text-zinc-900 dark:text-white">
+                        System Design</div>
                 </div>
-                <div class="absolute right-0 top-0 bottom-0 w-12 dark:from-zinc-900 pointer-events-none z-10">
+                <div
+                    class="absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-white to-transparent dark:from-zinc-900 pointer-events-none z-10">
                 </div>
             </div>
         </div>
-        <section class="mx-auto w-[calc(100%-30px)] max-sm:w-[calc(100%-25px)] max-lg:w-full pt-28">
-            <div class=" grid grid-cols-3 gap-y-7 gap-4 py-6 max-lg:grid-cols-2 max-sm:grid-cols-1">
+    </section>
+    <main
+        class="px-0 max-sm:mx-2 max-lg:mx-2 ml-0 [@media(width:1024px)]:ml-[72px] [@media(min-width:1025px)]:ml-60 w-full [@media(width:1024px)]:w-[calc(100%_-_65px)] [@media(min-width:1025px)]:w-[calc(100%_-_240px)] max-sm:w-auto transition-all duration-300">
+        <section class="mx-auto w-full max-sm:w-auto max-lg:w-auto pt-28">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-4 gap-y-10 mx-4 py-6 ">
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-sheriyan1.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class=" text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            8:04:12</h1>
+                    </div>
+                    <div>
+                        <div class="flex flex-row items-start justify-between gap-3">
+                            <div class="flex gap-2">
+                                <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                        src="assets/Sheriyan.jpg" alt="" class="rounded-full object-cover"></div>
+                                <div class="flex justify-center items-start">
+                                    <ul class="list-none">
+                                        <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">JavaScript Full
+                                            Course | JavaScript
+                                            - Learn Everything | Sheryians Coding School</li>
+                                        <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Sheriyans Coding
+                                            School <i
+                                                class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i>
+                                        </li>
+                                        <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">1.4m views • 10
+                                            months ago</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                        class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-harry1.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/CodewithHarry.jpg" alt="" class="rounded-full object-cover"></div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">Installing VS Code
+                                        &
+                                        How Websites Work | Sigma Web Development Course - Tutorial</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">CodeWithHarry <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">7.3m views • 2 years
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-chai1.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ChaiaurCode.jpg" alt="" class="rounded-full object-cover"></div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">Javascript for
+                                        beginners | chai aur #javascript</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Chai aur Code <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">2.3m views • 3 years
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-apna1.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ApnaCollege.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">Building AMAZON Clone for Beginners | Project using HTML & CSS</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Apna College <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">3.4m views • 3 years ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-ab1.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/AbdulBari.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">1. Introduction to Algorithms </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Abdul Bari <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">7.2m views • 8 years ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-notyourcollege1.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ChaiaurCode.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">01 What is Redis
+                                        and
+                                        why it exists </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Chai aur Code <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">82k views • 9 days
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-neeraj1.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ChaiaurCode.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">01 What is Redis
+                                        and
+                                        why it exists </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Chai aur Code <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">82k views • 9 days
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-chai2.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ChaiaurCode.jpg" alt="" class="rounded-full object-cover"></div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">Web Development
+                                        Roadmap
+                                        2025 with GenAI</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Chai aur Code <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">531k views • 1 year
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-apna2.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ApnaCollege.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">JavaScript Tutorial (2024) for Beginners to Pro (with Notes, Projects & Practice Questions)</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Apna College <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">3.6m views • 2 years ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-harry2.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/CodewithHarry.jpg" alt="" class="rounded-full object-cover"></div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">Introduction to
+                                        Programming & Python | Python Tutorial</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">CodeWithHarry <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">11m views • 3 years
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-ab2.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/AbdulBari.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">1.1: Introduction to Data Structures & Algorithms (DSA) [Abdul Bari] DSA Course </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Abdul Bari <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">7.9m views • 8 years ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
                 <div
-                    class="grid grid-rows-[70%_30%] h-80 max-lg:h-72 max-sm:h-75 max-lg:hover:scale-100 hover:scale-105">
-                    <div class="bg-yellow-400 rounded-xl"></div>
-                    <div class="bg-cyan-200">
-                        <h1>hello everone this is my new video</h1>
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-neeraj2.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ChaiaurCode.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">01 What is Redis
+                                        and
+                                        why it exists </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Chai aur Code <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">82k views • 9 days
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-sheriyan2.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/Sheriyan.jpg" alt="" class="rounded-full object-cover h-10 w-10"></div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">ReactJS Full Course
+                                        |
+                                        ReactJS - Learn Everything | Sheryians Coding School</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Sheriyans Coding
+                                        School
+                                        <i class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i>
+                                    </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">1.3m views • 7 months
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-notyourcollege2.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ChaiaurCode.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">01 What is Redis
+                                        and
+                                        why it exists </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Chai aur Code <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">82k views • 9 days
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-neeraj3.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ChaiaurCode.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">01 What is Redis
+                                        and
+                                        why it exists </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Chai aur Code <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">82k views • 9 days
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-ab3.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/AbdulBari.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">10.1 AVL Tree - Insertion and Rotations</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Abdul Bari <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">1.6m views • 8 years ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-harry3.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/CodewithHarry.jpg" alt="" class="rounded-full object-cover"></div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">Introduction to
+                                        JavaScript + Setup | JavaScript Tutorial in Hindi #1</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">CodeWithHarry <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">5.3m views • 3 years
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-chai3.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ChaiaurCode.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">01 What is Redis
+                                        and
+                                        why it exists </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Chai aur Code <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">82k views • 9 days
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-sheriyan3.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/Sheriyan.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">💥Tailwind CSS Easy
+                                        Peasy Tutorial: Ultimate Web Design Secret!</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Sheriyans Coding
+                                        School
+                                        <i class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i>
+                                    </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">175k views • 2 years
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-apna3.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ApnaCollege.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">How to create a Great LinkedIn Profile in 2024 | for College Students</li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Apna College <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">3.5m views • 2 years ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col gap-3 max-lg:hover:scale-100 hover:scale-[1.02] transition-transform duration-200">
+                    <div class="bg-yellow-400 rounded-xl aspect-video relative"><img src="assets/t-notyourcollege3.jpg"
+                            class="rounded-xl object-cover">
+                        <h1
+                            class="text-white absolute bottom-2 right-2 text-sm rounded-sm bg-zinc-700 to-transparent px-[4px]">
+                            16:20</h1>
+                    </div>
+                    <div class="flex flex-row items-start justify-between gap-3">
+                        <div class="flex gap-2">
+                            <div class="flex justify-center items-start w-16 h-8 rounded-full"><img
+                                    src="assets/ChaiaurCode.jpg" alt="" class="rounded-full object-cover h-10 w-10">
+                            </div>
+                            <div class="flex justify-center items-start">
+                                <ul class="list-none">
+                                    <li class=" py-[1px] font-medium leading-[1.35] dark:text-white">01 What is Redis
+                                        and
+                                        why it exists </li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">Chai aur Code <i
+                                            class="fa-solid fa-circle-check text-zinc-500 dark:text-zinc-400"></i></li>
+                                    <li class=" py-[1px] text-sm text-zinc-500 dark:text-zinc-400">82k views • 9 days
+                                        ago
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-center items-start text-xl h-10 my-1"><i
+                                    class="fa-solid fa-ellipsis-vertical text-black dark:text-white"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
