@@ -8,7 +8,7 @@ The project was built to deeply understand how real-world video platforms manage
 <br>
 
 <h2>Live Demo</h2>
-<a href="INSERT_YOUR_LIVE_LINK_HERE">View Live Project</a>
+<a href="https://rm-15.github.io/Youtube-UI-Clone-Using-Tailwind-CSS/">View Live Project</a>
 
 <h2>📺 Project Showreel</h2>
 <h3>1. Desktop Navigation & Sidebar Architecture</h3>
